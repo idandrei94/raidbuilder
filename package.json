@@ -1,0 +1,14 @@
+{
+  "name": "raid-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tau-prolog": "^0.3.4"
+  }
+}
