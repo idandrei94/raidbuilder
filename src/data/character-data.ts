@@ -1,5 +1,6 @@
+import { Player } from '../models/models';
 
-const players = [
+export const players: Player[] = [
     {
         name: 'advertise',
         characters: [
@@ -539,6 +540,11 @@ const players = [
                 ]
             },
             {
+                name: 'magieslut', 'specs': [
+                    { spec: 'fire', value: 8 }
+                ]
+            },
+            {
                 name: 'facetheboy', 'specs': [
                     { spec: 'marksmanship', value: 36 }
                 ]
@@ -623,6 +629,12 @@ const players = [
                 ]
             },
             {
+                name: 'florynelmagie', 'specs': [
+                    { spec: 'fire', value: 20 },
+                    { spec: 'arcane', value: 17 }
+                ]
+            },
+            {
                 name: 'floryneldk', 'specs': [
                     { spec: 'unholydps', value: 23 }
                 ]
@@ -679,7 +691,13 @@ const players = [
                     { spec: 'retribution', value: 9 },
                     { spec: 'holy', value: 22 }
                 ]
-            }
+            },
+            {
+                name: 'bagainauh', 'specs': [
+                    { spec: 'unholydps', value: 20 },
+                    { spec: 'frostdps', value: 17 }
+                ]
+            },
         ]
     },
     {
@@ -724,6 +742,12 @@ const players = [
                 ]
             },
             {
+                name: 'ayyuh', 'specs': [
+                    { spec: 'unholydps', value: 20 },
+                    { spec: 'frostdps', value: 17 }
+                ]
+            },
+            {
                 name: 'milkyway', 'specs': [
                     { spec: 'shadow', value: 21 },
                     { spec: 'discipline', value: 27 }
@@ -746,9 +770,70 @@ const players = [
                     { spec: 'protection', value: 20 },
                     { spec: 'holy', value: 7 }
                 ]
+            },
+            {
+                name: 'carfire',
+                specs: [{ spec: 'fire', value: 13 }]
             }
         ]
     },
+    {
+        name: 'fakeA',
+        characters: [
+            {
+                name: 'fakeuh',
+                specs: [{ 'spec': 'unholydps', value: 12 }]
+            },
+            {
+                name: 'fakemm',
+                specs: [{ spec: 'marksmanship', value: 22 }]
+            },
+            {
+                name: 'fakeshadow',
+                specs: [{ spec: 'shadow', value: 13 }]
+            },
+            {
+                name: 'fakefire',
+                specs: [{ spec: 'fire', value: 13 }]
+            }
+        ]
+    },
+    {
+        name: 'fakeb',
+        characters: [
+            {
+                name: 'uhb',
+                specs: [{ 'spec': 'unholydps', value: 12 }]
+            },
+            {
+                name: 'mmb',
+                specs: [{ spec: 'marksmanship', value: 22 }]
+            },
+            {
+                name: 'discb',
+                specs: [{ spec: 'discipline', value: 5 }]
+            },
+            {
+                name: 'affb',
+                specs: [{ spec: 'affliction', value: 5 }]
+            }
+        ]
+    },
+    {
+        name: 'micunealtasecretaplayer',
+        characters: [
+            {
+                name: 'micunealtamagica',
+                specs: [
+                    { spec: 'fire', value: 11 }
+                ]
+            },
+            {
+                name: 'micunealtabufnita',
+                specs: [
+                    { spec: 'balance', value: 11 }
+                ]
+            }
+        ]
+    }
 ];
-
-module.exports = players;

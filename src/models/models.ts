@@ -44,7 +44,30 @@ export type Player = {
 };
 
 export type Composition = {
-    [group: string]: CompOption[];
+    tanks: CompOption[],
+    healers: CompOption[],
+    dps: CompOption[];
 };
 
-export type CompOption = Spec[];
+export type CompOption = { specs: Spec[], note?: string; };
+
+export type ResultSlot = {
+
+    specs: Spec[];
+    note?: string;
+    role: 'tank' | 'healer' | 'dps';
+    group: number;
+};
+
+export type ResultSpec = {
+
+    character: string;
+    player: string;
+    spec: Spec;
+    value: number;
+};
+
+export type Result = {
+    slot: ResultSlot,
+    spec: ResultSpec;
+}[];
