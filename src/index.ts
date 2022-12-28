@@ -1,7 +1,7 @@
 import { players } from './data/character-data';
 import { iccComp } from './data/raid-compositions';
 import { Composition, Player, Result, ResultSlot, ResultSpec, Spec } from './models/models';
-import { formatResult, isSpecAvailable } from './utils/comp-utils';
+import { formatResult, isSpecAvailable, validateGroup } from './utils/comp-utils';
 
 const getSpecList = (playerList: Player[]) => playerList
     .map(player =>
@@ -93,3 +93,4 @@ for (let i = 0; i < GROUP_COUNT; ++i)
 //         .sort((a, b) => a.spec.player > b.spec.player ? 1 : -1)
 //         .map(slot => formatResult(slot.slot, slot.spec))
 // );
+console.log('The result is', validateGroup(result) ? 'valid.' : 'invalid.');
